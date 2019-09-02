@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:id="@+id/titleText" android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consecutive Wins: "
+        android:id="@+id/consecwins"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:id="@+id/newGameBtn" android:layout_column="0" android:layout_gravity="center_horizontal"
+        android:onClick="newGame"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center" android:id="@+id/tableLayout">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:id="@+id/topLeft" android:layout_column="1" android:width="100dp" android:height="100dp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O"
+                android:id="@+id/button" android:layout_column="2" android:width="100dp" android:height="100dp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O"
+                android:id="@+id/button1" android:layout_column="3" android:width="100dp" android:height="100dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O"
+                android:id="@+id/button2" android:layout_column="1" android:width="100dp" android:height="100dp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O"
+                android:id="@+id/button3" android:layout_column="2" android:width="100dp" android:height="100dp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O"
+                android:id="@+id/button4" android:layout_column="3" android:width="100dp" android:height="100dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O"
+                android:id="@+id/button5" android:layout_column="1" android:width="100dp" android:height="100dp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O"
+                android:id="@+id/button6" android:layout_column="2" android:width="100dp" android:height="100dp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O"
+                android:id="@+id/button7" android:layout_column="3" android:width="100dp" android:height="100dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Scores and Quit \n to View High Scores"
+        android:id="@+id/buttonscore"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/buttonback"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
